@@ -9,7 +9,6 @@ from models import model_attributes
 from data.data import dataset_attributes, shift_types, prepare_data, log_data
 from utils import set_seed, Logger, CSVBatchLogger, log_args
 from train import train
-from loss_func import construct_loss_func
 
 
 def main():
