@@ -81,9 +81,9 @@ class MultiNLIDataset(ConfounderDataset):
         # Load features
         self.features_array = []
         for feature_file in [
-            'cached_train_bert-base-uncased_128_mnli',   # Train
-            'cached_dev_bert-base-uncased_128_mnli',    # Val
-            'cached_dev_bert-base-uncased_128_mnli-mm'  # Test
+            'cached_train_bert-base-uncased_128_mnli',  
+            'cached_dev_bert-base-uncased_128_mnli',
+            'cached_dev_bert-base-uncased_128_mnli-mm'
             ]:
 
             features = torch.load(
