@@ -4,7 +4,7 @@ This code implements the group DRO algorithm from the following paper:
 
 > Shiori Sagawa\*, Pang Wei Koh\*, Tatsunori Hashimoto, and Percy Liang
 >
-> [Distributionally Robust Neural Networks for Group Shifts: On the Importance of Regularization for Worst-Case Generalization]
+> [Distributionally Robust Neural Networks for Group Shifts: On the Importance of Regularization for Worst-Case Generalization](https://arxiv.org/abs/1911.08731)
 
 The experiments use the following datasets:
 - [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
