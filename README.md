@@ -11,6 +11,8 @@ The experiments use the following datasets:
 - Waterbirds, formed from [Caltech-UCSD Birds 200](http://www.vision.caltech.edu/visipedia/CUB-200.html) + [Places](http://places2.csail.mit.edu/)
 - [MultiNLI](https://www.nyu.edu/projects/bowman/multinli/)
 
+For an executable, Dockerized version of the experiments in these paper, please see our [Codalab worksheet](https://worksheets.codalab.org/worksheets/0x621811fe446b49bb818293bae2ef88c0).
+
 ## Abstract
 
 Overparameterized neural networks
