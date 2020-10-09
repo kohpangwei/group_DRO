@@ -25,8 +25,8 @@ def process_df_waterbird9(train_df, val_df, test_df, params):
         acc_metrics.append(f'avg_acc_group:{group_idx}')
 
     ratio = params['n_train'] / np.sum(params['n_train'])
-    val_df['avg_acc'] = test_df.loc[:, acc_metrics] @ ratio
-    val_df['avg_loss'] = test_df.loc[:, loss_metrics] @ ratio
+    val_df['avg_acc'] = val_df.loc[:, acc_metrics] @ ratio
+    val_df['avg_loss'] = val_df.loc[:, loss_metrics] @ ratio
     test_df['avg_acc'] = test_df.loc[:, acc_metrics] @ ratio
     test_df['avg_loss'] = test_df.loc[:, loss_metrics] @ ratio
 
