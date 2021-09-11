@@ -56,7 +56,7 @@ Our code expects the following files/folders in the `[root_dir]/celebA` director
 - `data/list_attr_celeba.csv`
 - `data/img_align_celeba/`
 
-You can download these dataset files from [this Kaggle link](https://www.kaggle.com/jessicali9530/celeba-dataset). The original dataset, due to Liu et al. (2015), can be found [here](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
+You can download these dataset files from [this Kaggle link](https://www.kaggle.com/jessicali9530/celeba-dataset). The original dataset, due to Liu et al. (2015), can be found [here](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). The version of the CelebA dataset that we use in the paper (with the (hair, gender) groups) can also be accessed through the [WILDS package](https://github.com/p-lambda/wilds), which will automatically download the dataset.
 
 A sample command to run group DRO on CelebA is:
 `python run_expt.py -s confounder -d CelebA -t Blond_Hair -c Male --lr 0.0001 --batch_size 128 --weight_decay 0.0001 --model resnet50 --n_epochs 50 --reweight_groups --robust --gamma 0.1 --generalization_adjustment 0`
@@ -70,7 +70,7 @@ Our code expects the following files/folders in the `[root_dir]/cub` directory:
 
 - `data/waterbird_complete95_forest2water2/`
 
-You can download a tarball of this dataset [here](https://nlp.stanford.edu/data/dro/waterbird_complete95_forest2water2.tar.gz).
+You can download a tarball of this dataset [here](https://nlp.stanford.edu/data/dro/waterbird_complete95_forest2water2.tar.gz). The Waterbirds dataset can also be accessed through the [WILDS package](https://github.com/p-lambda/wilds), which will automatically download the dataset.
 
 A sample command to run group DRO on Waterbirds is:
 `python run_expt.py -s confounder -d CUB -t waterbird_complete95 -c forest2water2 --lr 0.001 --batch_size 128 --weight_decay 0.0001 --model resnet50 --n_epochs 300 --reweight_groups --robust --gamma 0.1 --generalization_adjustment 0`
