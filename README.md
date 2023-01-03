@@ -86,6 +86,7 @@ we calculate the average test accuracy over each group and then report a weighte
 
 If you'd like to generate variants of this dataset, we have included the script we used to generate this dataset (from the CUB and Places datasets) in `dataset_scripts/generate_waterbirds.py`. Note that running this script will not create the exact dataset we provide above, due to random seed differences. You will need to download the [CUB dataset](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) as well as the [Places dataset](http://places2.csail.mit.edu/download.html). We use the high-resolution training images (MD5: 67e186b496a84c929568076ed01a8aa1) from Places. Once you have downloaded and extracted these datasets, edit the corresponding paths in `generate_waterbirds.py`.
 
+Note: Eastern Towhees, Western Meadowlarks, and Western Wood Pewees are mistakenly marked as waterbirds in this dataset when they are in fact landbirds. This doesn't affect the validity of the dataset. Thank you to Saeid Asgari and his student for pointing this out.
 
 ### MultiNLI with annotated negations
 
